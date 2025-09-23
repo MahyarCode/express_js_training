@@ -1,4 +1,3 @@
-```
 # Node.js
 node_modules/
 npm-debug.log*
@@ -35,4 +34,4 @@ coverage/
 # Misc
 .DS_Store
 Thumbs.db
-```
+
