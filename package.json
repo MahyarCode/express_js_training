@@ -1,0 +1,31 @@
+{
+  "name": "express-ts-api",
+  "version": "0.0.1",
+  "description": "A complete tutorial for making express api with typescript",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "ts-node ./src/server.ts",
+    "prod" : "tsc && node ./dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahyarCode/express_js_training.git"
+  },
+  "author": "mahyar.mousavi.1408@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MahyarCode/express_js_training/issues"
+  },
+  "homepage": "https://github.com/MahyarCode/express_js_training#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.2",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
