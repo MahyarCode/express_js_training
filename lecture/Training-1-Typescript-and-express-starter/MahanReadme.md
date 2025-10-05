@@ -386,3 +386,16 @@ const ROLE = {
 so we haven't any thing in javascript that give Enum feature but we can to create an simulation from enum in javascript with an object.
 
 ---
+
+## What is Port ?
+
+if we think that a server is an building, every house have an number that this number is house ID.
+so everything in server have address that we say that port.
+
+for example this port:
+
+> localhost:3000 or localhost:80
+
+this ports is for API's. this is an standard and we haven't any limit in this case, but if we want an standard code we should to comply this roles.
+
+or in another example, React App default port is 5271 or PostgreSQL default port is 5432. so anything in server have a address that Each port is dedicated to a specific task.
