@@ -256,3 +256,98 @@ type User = { age: number }; // ❌ Error: Duplicate identifier
 and this is last diffrent of types with interfaces.
 
 ---
+
+## What is `Export` and `Import` ?
+
+in ESM type of javascript project, we should create each section as module.
+
+modules are like puzzle section and the puzzle board is the application;
+each module should fill a feature or section of the application.
+
+when we use modules, we haven't any connection between main file and modules.
+
+for make an connection between these files, we should to `export` the module and `import` that in the main file.
+
+in this example we have a main file and a module that we want to use module into the main file:
+
+```javascript
+//  Javascript Code
+// Module File
+
+export function Hello(text) {
+  console.log(text);
+}
+```
+
+and this is the main file :
+
+```javascript
+// Main File
+
+import { Hello } from "filePath";
+
+Hello("Hello World !");
+```
+
+this mini app will show a message that created in module and used in main file that at the end, shows the 'Hello World !'
+
+so, when we want to use an module in another place, we should `export` it and then we should `import` it in the module-user file.
+
+but we have to `export`, export and export default.
+
+this two exports haven't any diffrent at the general application and all of these exports will export you'r module but we should know when use it each one of these exports.
+
+- when we want to export one thing in module -> we should to use export default
+- when we want to export two or more things in module -> we should to use export
+
+but, maybe you have question, "why ?";
+
+when we have one variable, function or anything that we want export it, this is default thing that we have in our module, so we should to use export default:
+
+```javascript
+// Javascript Code
+
+function Sum(a, b) {
+  console.log(a + b);
+}
+
+export default Sum;
+```
+
+but when we have two or more things that we want to export, this is not default, so we should use export for exporting.
+
+```javascript
+function Sum(a, b) {
+  console.log(a + b);
+}
+
+function Division(a, b) {
+  console.log(a / b);
+}
+
+export { Sum, Division };
+```
+
+and when you exported you'r module, it's time to use it in main file !
+
+we have two ways to import module, this is for when we used export and export default.
+
+when we want to import an module that have export default into itself, we should use import like this:
+
+```javascript
+import Test from "testPath";
+```
+
+this will be works, because we have one export and we want it.
+
+but if we have two or more exports in module we should to use export like this:
+
+```javascript
+import { Test } from "testPath";
+```
+
+we should to use this way, because we just want this export and because we don't know module exports number.
+
+(Note: in `Types`, we haven't export default and we can't use export default feature for Types)
+
+---
