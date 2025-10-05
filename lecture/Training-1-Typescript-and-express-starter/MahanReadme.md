@@ -351,3 +351,38 @@ we should to use this way, because we just want this export and because we don't
 (Note: in `Types`, we haven't export default and we can't use export default feature for Types)
 
 ---
+
+## What is Enum and why we use it ?
+
+some times we want to give title to a state or status but we didn't want to valuation the status or state. for example, in login and AUTH system we use enums for determine roles like Admin, Editor and User and this is Enum features that enums haven't value and it's just title.
+Of Course, any technology like PostgreSQL have a way to add indexes to Enums but this indexes it's not a Enum value.
+
+for better mindset, we have example from Enum:
+
+```typescript
+// Typescript Code
+
+enum ROLE {
+  ADMIN,
+  EDITOR,
+  USER,
+}
+```
+
+this is an enum that have many applications in programming, especially in programming with `Typescript` .
+
+## Does Javascript have enum ?
+
+javascript didn't have a built-in Enum feature but we can create an simulation of enum in javascript like this:
+
+```javascript
+const ROLE = {
+  admin: "admin",
+  editor: "editor",
+  user: "user",
+};
+```
+
+so we haven't any thing in javascript that give Enum feature but we can to create an simulation from enum in javascript with an object.
+
+---
